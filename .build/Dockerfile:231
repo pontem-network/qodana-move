@@ -1,0 +1,6 @@
+FROM jetbrains/qodana-php
+COPY plugins/toml /opt/idea/plugins/toml
+COPY plugins/move/intellij-move-231 /opt/idea/plugins/intellij-move-231
+COPY config /.move_config
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT [ "/entrypoint.sh" ]
