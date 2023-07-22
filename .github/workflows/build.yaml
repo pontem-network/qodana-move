@@ -36,7 +36,7 @@ jobs:
         file: "./.build/Dockerfile"
         build-args: |
           VERSION=${{ matrix.version }}
-          QODANA_VERSION=${{ env.qodana_version }}}
+          QODANA_VERSION=${{ env.qodana_version }}
         tags: ghcr.io/pontem-network/qodana-move:${{ matrix.version }}
         cache-from: type=gha,mode=max
         cache-to: type=gha,mode=max
