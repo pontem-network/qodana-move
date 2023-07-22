@@ -1,4 +1,5 @@
-FROM jetbrains/qodana-php
+ARG QODANA_VERSION
+FROM jetbrains/qodana-php:${QODANA_VERSION}-eap
 ARG VERSION
 COPY plugins/toml /opt/idea/plugins/toml
 COPY plugins/move/${VERSION} /opt/idea/plugins/intellij-move-${VERSION}
