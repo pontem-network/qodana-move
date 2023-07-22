@@ -16,13 +16,13 @@ Create `qodana.yaml` file:
 # qodana.yaml
 version: "1.0"
 # Following plugin versions are available: 1.30.0.222, 1.30.0.223, 1.30.0.231
-linter: ghcr.io/pontem-network/qodana-move:222
+linter: ghcr.io/pontem-network/qodana-move:1.30.0.222
 ```
 
 Run:
 
 ```bash
-docker run --rm -it -p 8080:8080 -v $(pwd):/data/project ghcr.io/pontem-network/qodana-move:222 --show-report
+docker run --rm -it -p 8080:8080 -v $(pwd):/data/project ghcr.io/pontem-network/qodana-move:1.30.0.222 --show-report
 ```
 
 ## Use it github actions
