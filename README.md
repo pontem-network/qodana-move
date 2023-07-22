@@ -15,7 +15,7 @@ Create `qodana.yaml` file:
 ```yaml
 # qodana.yaml
 version: "1.0"
-# Following plugin versions are available: 222, 223, 231
+# Following plugin versions are available: 1.30.0.222, 1.30.0.223, 1.30.0.231
 linter: ghcr.io/pontem-network/qodana-move:222
 ```
 
@@ -43,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        version: ["222", "223", "231"]
+        version: ["1.30.0.222", "1.30.0.223", "1.30.0.231"]
     
     steps:
       - uses: actions/checkout@v3

@@ -1,7 +1,7 @@
 FROM jetbrains/qodana-php
 ARG VERSION
 COPY plugins/toml /opt/idea/plugins/toml
-COPY plugins/move/intellij-move-222 /opt/idea/plugins/intellij-move-${VERSION}
+COPY plugins/move/${VERSION} /opt/idea/plugins/intellij-move-${VERSION}
 COPY config /.move_config
-COPY entrypoint.sh /entrypoint.sh
+COPY .build/entrypoint.sh /entrypoint.sh
 ENTRYPOINT [ "/entrypoint.sh" ]
